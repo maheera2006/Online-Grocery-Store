@@ -63,4 +63,4 @@ public/          index.html, admin.html, app.js, admin.js, style.css
 - Future: custom domain, automatic payments, loyalty program, mobile app
 
 ## Author
-Maheera
+Mariyam Maheera R

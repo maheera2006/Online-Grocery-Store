@@ -29,15 +29,6 @@ A local grocery store is known only to nearby residents and sells only through w
 - Payments: UPI link and cash on delivery (no paid gateway)
 - Cost: ₹0
 
-## Screenshots
-| Store | Basket and checkout |
-|---|---|
-| ![Store](screenshots/store.png) | ![Checkout](screenshots/checkout.png) |
-
-| Admin orders | Prices and stock |
-|---|---|
-| ![Orders](screenshots/admin-orders.png) | ![Stock](screenshots/admin-stock.png) |
-
 ## How to run
 1. Install Node.js (LTS) from nodejs.org.
 2. Clone the project and open the folder:

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Online Grocery Store</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div><h1 id="shop">Grocery Store</h1><small id="area"></small></div>
+<div><a id="call" href="#">Call us</a> | <a id="wa" href="#" target="_blank">WhatsApp</a> | <a href="#" id="share">Share this store</a></div></header>
+<div class="wrap">
+ <div class="hero"><b>Order groceries from your local store</b>
+  <div class="steps"><span>1. Add items to your basket</span><span>2. Choose pickup or delivery</span><span>3. Pay by UPI or cash</span><span>4. Track with your order number</span></div></div>
+ <div class="bar"><input id="q" type="search" placeholder="Search products, for example tomato or milk" aria-label="Search products">
+  <input id="trk" placeholder="Order number, e.g. ORD1001" style="max-width:210px"><button class="btn alt" id="trkBtn">Track order</button></div>
+ <div id="trkOut"></div>
+ <div class="chips" id="chips"></div>
+ <div class="layout"><div class="grid" id="grid"></div>
+  <aside class="panel" id="panel"><h2>Your basket</h2><div id="cart"></div>
+   <div id="form" class="hide">
+    <label>Name</label><input id="name" autocomplete="name" placeholder="Your name">
+    <label>Mobile number</label><input id="phone" inputmode="numeric" maxlength="10" placeholder="10-digit mobile number">
+    <label>Get your order by</label>
+    <div class="radio"><label><input type="radio" name="type" value="pickup" checked><span>Pickup from store</span></label><label><input type="radio" name="type" value="delivery"><span>Home delivery</span></label></div>
+    <div id="dl" class="hide"><label>Delivery area</label><select id="area2"></select><label>Full address</label><textarea id="addr" rows="2" placeholder="House no, street, landmark"></textarea></div>
+    <label>Payment</label>
+    <div class="radio"><label><input type="radio" name="pay" value="cod" checked><span>Cash on delivery / pickup</span></label><label><input type="radio" name="pay" value="upi"><span>UPI</span></label></div>
+    <div id="upiBox" class="hide"><p class="empty" id="upiTxt"></p></div>
+    <button class="btn add" id="place">Place order</button><div id="err"></div>
+   </div></aside></div>
+ <div id="done" class="hide wrap"></div>
+</div>
+<button class="btn float" id="floatBtn">View basket</button>
+<footer>Prices change daily. The final bill for weighed items may differ slightly.</footer>
+<script src="app.js"></script></body></html>

@@ -1,0 +1,250 @@
+{
+  "config": {
+    "shopName": "AKR Grocery",
+    "area": "Your Area, Chennai",
+    "phone": "9876543210",
+    "whatsapp": "919876543210",
+    "upi": "yourstore@upi",
+    "freeAbove": 500,
+    "slabs": [
+      {
+        "name": "Within 2 km",
+        "charge": 20
+      },
+      {
+        "name": "2 to 4 km",
+        "charge": 40
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": "Tomato",
+      "category": "Vegetables",
+      "emoji": "🍅",
+      "price": 40,
+      "unit": "kg",
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "name": "Onion",
+      "category": "Vegetables",
+      "emoji": "🧅",
+      "price": 35,
+      "unit": "kg",
+      "inStock": true
+    },
+    {
+      "id": 3,
+      "name": "Potato",
+      "category": "Vegetables",
+      "emoji": "🥔",
+      "price": 32,
+      "unit": "kg",
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "name": "Carrot",
+      "category": "Vegetables",
+      "emoji": "🥕",
+      "price": 50,
+      "unit": "kg",
+      "inStock": false
+    },
+    {
+      "id": 5,
+      "name": "Green Chilli",
+      "category": "Vegetables",
+      "emoji": "🌶️",
+      "price": 12,
+      "unit": "100 g",
+      "inStock": true
+    },
+    {
+      "id": 6,
+      "name": "Banana",
+      "category": "Fruits",
+      "emoji": "🍌",
+      "price": 45,
+      "unit": "dozen",
+      "inStock": false
+    },
+    {
+      "id": 7,
+      "name": "Apple",
+      "category": "Fruits",
+      "emoji": "🍎",
+      "price": 160,
+      "unit": "kg",
+      "inStock": true
+    },
+    {
+      "id": 8,
+      "name": "Orange",
+      "category": "Fruits",
+      "emoji": "🍊",
+      "price": 90,
+      "unit": "kg",
+      "inStock": true
+    },
+    {
+      "id": 9,
+      "name": "Papaya",
+      "category": "Fruits",
+      "emoji": "🥭",
+      "price": 40,
+      "unit": "kg",
+      "inStock": true
+    },
+    {
+      "id": 10,
+      "name": "Milk",
+      "category": "Dairy",
+      "emoji": "🥛",
+      "price": 28,
+      "unit": "500 ml",
+      "inStock": true
+    },
+    {
+      "id": 11,
+      "name": "Curd",
+      "category": "Dairy",
+      "emoji": "🥣",
+      "price": 35,
+      "unit": "500 g",
+      "inStock": true
+    },
+    {
+      "id": 12,
+      "name": "Eggs",
+      "category": "Dairy",
+      "emoji": "🥚",
+      "price": 78,
+      "unit": "dozen",
+      "inStock": true
+    },
+    {
+      "id": 13,
+      "name": "Butter",
+      "category": "Dairy",
+      "emoji": "🧈",
+      "price": 58,
+      "unit": "100 g",
+      "inStock": true
+    },
+    {
+      "id": 14,
+      "name": "Rice (Ponni)",
+      "category": "Staples",
+      "emoji": "🍚",
+      "price": 65,
+      "unit": "kg",
+      "inStock": true
+    },
+    {
+      "id": 15,
+      "name": "Wheat Flour",
+      "category": "Staples",
+      "emoji": "🌾",
+      "price": 48,
+      "unit": "kg",
+      "inStock": true
+    },
+    {
+      "id": 16,
+      "name": "Toor Dal",
+      "category": "Staples",
+      "emoji": "🫘",
+      "price": 150,
+      "unit": "kg",
+      "inStock": true
+    },
+    {
+      "id": 17,
+      "name": "Sugar",
+      "category": "Staples",
+      "emoji": "🍬",
+      "price": 46,
+      "unit": "kg",
+      "inStock": true
+    },
+    {
+      "id": 18,
+      "name": "Salt",
+      "category": "Staples",
+      "emoji": "🧂",
+      "price": 22,
+      "unit": "kg",
+      "inStock": true
+    },
+    {
+      "id": 19,
+      "name": "Sunflower Oil",
+      "category": "Staples",
+      "emoji": "🛢️",
+      "price": 135,
+      "unit": "litre",
+      "inStock": true
+    },
+    {
+      "id": 20,
+      "name": "Tea Powder",
+      "category": "Snacks & Drinks",
+      "emoji": "🍵",
+      "price": 120,
+      "unit": "250 g",
+      "inStock": true
+    },
+    {
+      "id": 21,
+      "name": "Biscuits",
+      "category": "Snacks & Drinks",
+      "emoji": "🍪",
+      "price": 20,
+      "unit": "pack",
+      "inStock": true
+    },
+    {
+      "id": 22,
+      "name": "Chips",
+      "category": "Snacks & Drinks",
+      "emoji": "🥔",
+      "price": 20,
+      "unit": "pack",
+      "inStock": true
+    },
+    {
+      "id": 23,
+      "name": "Bath Soap",
+      "category": "Household",
+      "emoji": "🧼",
+      "price": 38,
+      "unit": "piece",
+      "inStock": true
+    },
+    {
+      "id": 24,
+      "name": "Detergent Powder",
+      "category": "Household",
+      "emoji": "🧺",
+      "price": 95,
+      "unit": "kg",
+      "inStock": true
+    },
+    {
+      "id": 25,
+      "name": "Chilli sauce",
+      "category": "Sauce",
+      "emoji": "🛒",
+      "price": 60,
+      "unit": "50ml",
+      "inStock": true
+    }
+  ],
+  "orders": [
+   
+  ]
+}

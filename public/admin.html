@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Store Admin</title><link rel="stylesheet" href="style.css"></head>
+<body><header><div><h1>Store admin</h1><small>Orders, prices and stock</small></div><a href="/">View store</a></header>
+<div class="wrap">
+<div id="login" class="panel" style="max-width:360px;margin:30px auto;position:static"><h2>Owner login</h2>
+ <label>Password</label><input id="pw" type="password" placeholder="Enter admin password"><button class="btn add" id="go">Log in</button><div id="le"></div></div>
+<div id="app" class="hide">
+ <div class="chips"><button class="chip on" id="t1">Orders</button><button class="chip" id="t2">Prices and stock</button></div>
+ <div id="orders"></div>
+ <div id="prods" class="hide">
+  <div class="panel" style="position:static;margin-bottom:14px"><h2>Add a product</h2>
+   <div class="bar"><input id="nn" placeholder="Name"><input id="nc" placeholder="Category, e.g. Vegetables"><input id="ne" placeholder="Emoji" style="max-width:90px"><input id="np" type="number" placeholder="Price" class="num"><input id="nu" placeholder="Unit, e.g. kg" style="max-width:110px"><button class="btn" id="na">Add product</button></div></div>
+  <table><thead><tr><th>Product</th><th>Price (₹)</th><th>In stock</th><th></th></tr></thead><tbody id="tb"></tbody></table>
+ </div></div></div>
+<script src="admin.js"></script></body></html>

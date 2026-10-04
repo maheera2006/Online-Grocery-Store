@@ -1,28 +1,75 @@
-# Online Grocery Store (single vendor, many customers)
+# Online Grocery Store
 
-Zero-cost web app: Node.js + Express, JSON file database, plain HTML/CSS/JS.
+A zero-cost web application that lets a local grocery store take orders online. One vendor (the store owner) manages the products and orders, and many customers can browse and buy.
 
-## Run in VS Code
-1. Install Node.js (nodejs.org, LTS version).
-2. Open this folder in VS Code, then open the terminal (Ctrl + `).
-3. `npm install`
-4. `npm start`
-5. Store: http://localhost:3000   Admin: http://localhost:3000/admin.html (password: `admin123`)
-
-## Set up for your client
-- Edit `data/db.json` > `config`: shopName, area, phone, whatsapp (with 91), upi, freeAbove, slabs (delivery charges by distance).
-- Change the admin password: `ADMIN_PASS=mypassword npm start` (Windows PowerShell: `$env:ADMIN_PASS="mypassword"; npm start`).
-- Clear demo orders: set `"orders": []` in `data/db.json`.
+## Problem statement
+A local grocery store is known only to nearby residents and sells only through walk-in customers. It cannot reach new customers, take remote orders, or manage frequently changing prices and stock digitally. This project gives the store a simple online shop for pickup or delivery, with UPI and cash payments, and an easy admin panel for the owner.
 
 ## Features
-Customer: product list, categories, search, basket, pickup/delivery, delivery slabs, free-delivery threshold, UPI pay link, COD, WhatsApp order message, order tracking, share store, mobile friendly.
-Admin: login, orders with one-tap status buttons (auto refresh), message customer on WhatsApp, edit price, stock toggle, add/delete products.
+**Customer**
+- Product list with categories and search
+- Basket with plus and minus buttons
+- Pickup or home delivery, with delivery charge by distance slab and free delivery above a set amount
+- UPI payment details and pay button, or cash on delivery
+- Order sent to the store on WhatsApp
+- Order tracking by order number
+- Call, WhatsApp and share-store buttons
+- Mobile-friendly layout
 
-## Structure
-server.js (API) | data/db.json (data) | public/ (index.html, admin.html, app.js, admin.js, style.css)
+**Owner (admin)**
+- Password login
+- Orders list that refreshes automatically, with one-tap status buttons
+- Message the customer on WhatsApp
+- Edit prices, mark items out of stock, add and delete products
 
-## Go live for free (later)
-Push to GitHub and deploy on Render's free web service. Note that free hosts may reset the JSON file; use a free Firebase/Supabase database for permanent storage.
+## Tech stack
+- Frontend: HTML, CSS, JavaScript
+- Backend: Node.js, Express
+- Database: JSON file (`data/db.json`)
+- Payments: UPI link and cash on delivery (no paid gateway)
+- Cost: ₹0
 
-## Not included in this version
-SMS OTP login, automatic payment gateway, Tamil toggle, reviews, coupons. Mention these as future scope.
+## Screenshots
+| Store | Basket and checkout |
+|---|---|
+| ![Store](screenshots/store.png) | ![Checkout](screenshots/checkout.png) |
+
+| Admin orders | Prices and stock |
+|---|---|
+| ![Orders](screenshots/admin-orders.png) | ![Stock](screenshots/admin-stock.png) |
+
+## How to run
+1. Install Node.js (LTS) from nodejs.org.
+2. Clone the project and open the folder:
+```
+   git clone https://github.com/maheera2006/Online-Grocery-Store.git
+   cd Online-Grocery-Store
+```
+3. Install and start:
+```
+   npm install
+   npm start
+```
+4. Open the store at http://localhost:3000
+5. Open the admin panel at http://localhost:3000/admin.html (default password: `admin123`)
+
+## Set up for a real store
+- Edit `data/db.json` under `config`: `shopName`, `area`, `phone`, `whatsapp` (with 91), `upi`, `freeAbove` and `slabs`.
+- Change the admin password. In PowerShell: `$env:ADMIN_PASS="mypassword"; npm start`
+- Clear demo orders by setting `"orders": []` in `data/db.json`.
+
+## Project structure
+```
+server.js        API and server
+data/db.json     products, orders and store settings
+public/          index.html, admin.html, app.js, admin.js, style.css
+```
+
+## Limitations and future scope
+- UPI payments are confirmed manually by the owner (no payment gateway yet)
+- No SMS OTP login, Tamil language toggle, reviews or coupons
+- JSON file storage suits a small store; a database such as Firebase or MongoDB can replace it
+- Future: custom domain, automatic payments, loyalty program, mobile app
+
+## Author
+Maheera
